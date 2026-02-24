@@ -1,5 +1,5 @@
-import CareerCard from "./CareerCard";
-import { GradientDot } from "./GradientDot";
+import CareerCard from "@/pages/CareerJourney/CareerCard";
+import { GradientDot } from "@/pages/CareerJourney/GradientDot";
 
 export default function CareerJourney() {
   const careers = [

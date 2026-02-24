@@ -10,3 +10,5 @@ export function GradientDot() {
     </div>
   );
 }
+
+export default GradientDot;

@@ -29,3 +29,5 @@ export function CheckV2({ checked = true }: Props) {
     </div>
   );
 }
+
+export default CheckV2;

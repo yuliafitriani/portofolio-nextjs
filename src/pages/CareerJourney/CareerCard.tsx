@@ -7,11 +7,11 @@ interface CareerCardProps {
   responsibilities: string[];
 }
 
-export default function CareerCard({
+export function CareerCard({
   title,
   company,
   period,
-  responsibilities,
+  responsibilities = [],
 }: CareerCardProps) {
   return (
     <div className="bg-neutral-500 w-full mx-auto p-6 rounded-xl flex flex-col gap-4">
@@ -27,11 +27,15 @@ export default function CareerCard({
         <span>{period}</span>
       </div>
 
-      <ul className="list-disc pl-5 space-y-2 text-neutral-200 text-sm leading-relaxed">
-        {responsibilities.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      {responsibilities.length > 0 && (
+        <ul className="list-disc pl-5 space-y-2 text-neutral-200 text-sm leading-relaxed">
+          {responsibilities.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
+
+export default CareerCard;
