@@ -4,36 +4,69 @@ import { GradientDot } from "@/pages/CareerJourney/GradientDot";
 export default function CareerJourney() {
   const careers = [
     {
-      title: "Frontend Developer",
-      company: "Google",
-      period: "Jul 2024 - Present",
+      title: "Core System Engineer",
+      company: "PT Asuransi Takaful Keluarga",
+      period: "Sept 2022 - Present",
       responsibilities: [
-        "Developed and maintained responsive web applications, improving load times by 30% through performance optimization.",
-        "Translated UI/UX designs into functional and visually appealing web interfaces using React and TailwindCSS.",
+        "Developed REST APIs integrating digital platform with the core system.",
+        "Enhanced functionality by adding new features to existing applications.",
+        "Performed bug analysis and implemented permanent fixes.",
+        "Created and maintained SSRS reports.",
+        "Handled data migration using Pentaho Data Integration (PDI).",
       ],
     },
     {
-      title: "Frontend Developer",
-      company: "Google",
-      period: "Jul 2024 - Present",
+      title: "IT Programmer",
+      company: "PT Yongjin Javasuka Garment",
+      period: "Nov 2020 – Aug 2022",
       responsibilities: [
-        "Developed and maintained responsive web applications.",
-        "Built scalable UI components.",
+        "Developed Style Library system for centralized design reference management.",
+        "Developed Bogor Costing Program to streamline cost estimation.",
+        "Developed ETC Target and SMV Target programs to support production planning.",
+        "Revamped Sewing Management Program from VB6 to ASP.NET C#.",
       ],
     },
     {
-      title: "Frontend Developer",
-      company: "Google",
-      period: "Jul 2024 - Present",
+      title: "Full Stack Developer",
+      company: "PT Jakarta Interactive",
+      period: "Nov 2019 – Oct 2020",
       responsibilities: [
-        "Improved performance and accessibility.",
-        "Collaborated with product and design teams.",
+        "Maintained company profile website and developed landing page.",
+        "Developed REST APIs.",
+        "Developed a mobile application for postpartum mother registration.",
+        "Developed accounting software including quotation and invoicing modules.",
+      ],
+    },
+    {
+      title: "Full Stack Developer",
+      company: "PT Unggul Mitra Solusi",
+      period: "Apr 2018 – May 2019",
+      responsibilities: [
+        "Supported clients during new Inventory Software installations.",
+        "Maintained and enhanced accounting-related reports.",
+      ],
+    },
+    {
+      title: "Web Programmer",
+      company: "CV KPP Technology Solution",
+      period: "Jan 2017 – Mar 2018",
+      responsibilities: [
+        "Developed HRIS system for tour and travel agents",
+        "Developed finance system for Play Group",
+      ],
+    },
+    {
+      title: "Junior Programmer",
+      company: "PT Intisoft Mitra Sejahtera",
+      period: "May 2014 – Dec 2016",
+      responsibilities: [
+        "Maintenanced Core Banking System especially for BPR.",
       ],
     },
   ];
 
   return (
-    <section className="relative container overflow-hidden z-40">
+    <section className="relative overflow-hidden z-40">
       <div className="max-w-290 mx-auto px-6">
         <div className="w-full mx-auto items-center text-center my-10 flex flex-col gap-4">
           <h1 className="text-5xl font-extrabold">Career Journey</h1>

@@ -10,15 +10,15 @@ import ContactMeSection from "@/pages/ContactMe";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-16 bg-black pb-16 mx-auto">
+    <div className="flex flex-col gap-16 pb-16 mx-auto">
       <HeroSection />
       <AboutSection />
       <CareerJourney />
       <SkillSection />
-      <FaqSection />
+      {/* <FaqSection /> */}
       <ComparisonSection />
       <PortofolioSection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <ContactMeSection />
     </div>
   );

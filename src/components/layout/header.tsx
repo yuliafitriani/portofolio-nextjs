@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import LogoImg from "@/assets/Logo.svg";
 import Image from "next/image";
-import { Sms } from "iconsax-reactjs";
+import { Whatsapp } from "iconsax-reactjs";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 
@@ -15,7 +15,7 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
-  { name: "FAQ", href: "#faq" },
+  // { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -61,8 +61,16 @@ export function Header() {
         {/* Right Section */}
         <div className="flex items-center gap-3">
           {/* Desktop Hire Me */}
-          <Button className="hidden md:inline-flex rounded-full bg-linear-to-r from-[#DC49A6] to-[#8746EB]">
-            <Sms />
+          <Button
+            className="hidden md:inline-flex rounded-full bg-linear-to-r from-[#DC49A6] to-[#8746EB]"
+            onClick={() =>
+              window.open(
+                "https://wa.me/6282186970654?text=Hallo%20saya%20tertarik%20dengan%20CV%20Anda",
+                "_blank",
+              )
+            }
+          >
+            <Whatsapp />
             Hire Me
           </Button>
 

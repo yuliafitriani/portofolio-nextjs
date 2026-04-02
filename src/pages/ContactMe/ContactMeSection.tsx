@@ -4,27 +4,33 @@ import { useState } from "react";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import Modal from "./Modal";
+import { Whatsapp } from "iconsax-reactjs";
 import { Button } from "@/components/ui/button";
 
 const ContactMeSection = () => {
   const [form, setForm] = useState({
-    name: "",
-    email: "",
     message: "",
   });
 
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<"success" | "error" | null>(null);
 
-  const handleSubmit = (e: React.SubmitEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
+    const phone = "6282186970654"; // nomor WA (pakai 62, tanpa 0)
+    const text = encodeURIComponent(
+      form.message || "Halo saya ingin menghubungi Anda",
+    );
+
+    const url = `https://wa.me/${phone}?text=${text}`;
+
     setTimeout(() => {
-      const isSuccess = Math.random() > 0.5;
-      setResult(isSuccess ? "success" : "error");
+      window.open(url, "_blank");
       setLoading(false);
-    }, 1500);
+      setResult("success");
+    }, 500);
   };
 
   return (
@@ -42,27 +48,6 @@ const ContactMeSection = () => {
           </div>
           <div className="w-full max-w-xl mx-auto p-8 bg-white/5 backdrop-blur-5 rounded-4xl">
             <form className="space-y-8 w-full" onSubmit={handleSubmit}>
-              {/* NAME */}
-              <div className="w-full">
-                <Input
-                  id="name"
-                  placeholder="Name"
-                  className="w-full"
-                  required
-                />
-              </div>
-
-              {/* EMAIL */}
-              <div className="w-full">
-                <Input
-                  id="email"
-                  type="email"
-                  className="w-full"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-
               {/* MESSAGE */}
               <div className="w-full">
                 <Textarea
@@ -70,6 +55,8 @@ const ContactMeSection = () => {
                   className="w-full"
                   placeholder="Message"
                   required
+                  value={form.message}
+                  onChange={(e) => setForm({ message: e.target.value })}
                 />
               </div>
 
@@ -79,6 +66,7 @@ const ContactMeSection = () => {
                   className="w-full lg:w-full rounded-full"
                   disabled={loading}
                 >
+                  <Whatsapp />
                   {loading ? "Sending..." : "Send"}
                 </Button>
               </div>

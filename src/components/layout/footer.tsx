@@ -41,12 +41,19 @@ export default function Footer() {
             "
             />
 
-            <Instagram
-              size="20"
-              className="relative z-10 transition-transform duration-300 group-hover:scale-110"
-              color="#FFFFFF"
-              variant="Bold"
-            />
+            <a
+              href="https://www.instagram.com/yliafit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <Instagram
+                size="20"
+                className="relative z-10 transition-transform duration-300 group-hover:scale-110"
+                color="#FFFFFF"
+                variant="Bold"
+              />
+            </a>
           </a>
 
           {/* LinkedIn */}
@@ -74,14 +81,20 @@ export default function Footer() {
               color="#FFFFFF"
               variant="Bold"
             /> */}
-            <Image
-              src={Linkedin}
-              alt="Linkedin Logo"
-              className="relative z-10 transition-transform duration-300 group-hover:scale-110"
-              color="#FFFFFF"
-              height={20}
-              width={20}
-            />
+            <a
+              href="https://www.linkedin.com/in/yulia-fitriani-951503291/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <Image
+                src={Linkedin}
+                alt="LinkedIn Logo"
+                className="relative z-10 transition-transform duration-300 group-hover:scale-110"
+                height={20}
+                width={20}
+              />
+            </a>
           </a>
         </div>
       </div>

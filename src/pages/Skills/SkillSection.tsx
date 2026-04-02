@@ -11,7 +11,7 @@ import TSsvg from "@/assets/typescript.svg";
 
 export default function SkillSection() {
   return (
-    <section className="relative container overflow-hidden z-40">
+    <section className="relative overflow-hidden z-40">
       <div className="max-w-290 mx-auto px-6">
         <div className="w-full mx-auto items-center text-center my-10 flex flex-col gap-4">
           <h1 className="text-5xl font-extrabold">My Core Skill</h1>

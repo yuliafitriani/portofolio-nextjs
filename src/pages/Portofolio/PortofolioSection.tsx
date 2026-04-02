@@ -1,58 +1,32 @@
 import PortfolioCard from "./PortofolioCard";
-import Project1 from "@/assets/project-1.jpg";
-import Project2 from "@/assets/project-2.jpg";
-import Project3 from "@/assets/project-3.jpg";
-import Project4 from "@/assets/project-4.jpg";
-import Project5 from "@/assets/project-5.jpg";
-import Project6 from "@/assets/project-6.jpg";
+import Project1 from "@/assets/project-1.png";
+import Project2 from "@/assets/project-2.png";
+import Project3 from "@/assets/project-3.png";
 
 const Projects = [
   {
     image: Project1,
-    title: "Landing Page",
+    title: "Movie App",
     description:
-      "THE BIGGEST community event in Indonesia, which will run for 30 full days with the theme Unity in Creativity",
-    tech: ["React", "HTML", "CSS"],
-    link: "https://ui.shadcn.com/",
+      "A movie app that allows users to search for movies, view details, and manage their watchlist.",
+    tech: ["React", "Vite", "Tailwind CSS"],
+    link: "https://movie-app-silk-mu-13.vercel.app",
   },
   {
     image: Project2,
-    title: "Landing Page",
+    title: "Book App",
     description:
-      "Private hospital in the city of Padang that provides special surgical services.",
-    tech: ["React", "HTML", "CSS"],
-    link: "https://ui.shadcn.com/",
+      "Simple book app that allows users to search for books, view details, and manage their reading list.",
+    tech: ["React", "Next.js", "CSS"],
+    link: "https://book-app-theta-navy.vercel.app",
   },
   {
     image: Project3,
-    title: "Landing Page",
+    title: "Social Media App",
     description:
-      "Product engaged in WhatsApp API services and other information technology services.",
-    tech: ["React", "HTML", "CSS"],
-    link: "https://ui.shadcn.com/",
-  },
-  {
-    image: Project4,
-    title: "Landing Page",
-    description:
-      "nusa.id cloud is part of the Nusanet Group (PT. Media Antar Nusa)  of experience as an internet solution provider company.",
-    tech: ["React", "HTML", "CSS"],
-    link: "https://ui.shadcn.com/",
-  },
-  {
-    image: Project5,
-    title: "Landing Page",
-    description: "UKUR is a constructor and interior marketplace in Indonesia.",
-    tech: ["React", "HTML", "CSS"],
-    link: "https://ui.shadcn.com/",
-  },
-  {
-    image: Project6,
-    title: "Landing Page",
-    description:
-      "Product engaged in WhatsApp API services and other information technology services.",
-    tech: ["React", "HTML", "CSS"],
-    link: "https://ui.shadcn.com/",
+      "A social media app that allows users to create posts, follow friends, and engage with content.",
+    tech: ["React", "Next.js", "CSS"],
+    link: "https://social-media-app-sooty-ten.vercel.app",
   },
 ];
 
@@ -63,13 +37,11 @@ export default function PortofolioSection() {
         {/* Header */}
         <div className="mb-14 space-y-4 flex flex-col lg:flex-row justify-between gap-6">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-left w-full">
-            Experience in Front-End Development
+            Project with Next.js
           </h2>
           <p className="text-muted-foreground text-sm lg:text-lg lg:text-right text-left w-full">
-            I have experience developing 30+ web projects across various
-            industries, including marketplaces, health, fashion, sports, and
-            more. Implemented 1000+ responsive web pages with interactive
-            features and smooth animations
+            I have experience developing 3+ web projects across various
+            industries.
           </p>
         </div>
         {/* Portfolio Grid */}
