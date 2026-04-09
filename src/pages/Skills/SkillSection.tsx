@@ -21,7 +21,7 @@ export default function SkillSection() {
         </div>
 
         <div className="w-full mx-auto flex flex-col lg:flex-row">
-          <div className="w-full grid grid-cols-3 items-start justify-between">
+          <div className="w-full grid grid-cols-2 items-start justify-between gap-6">
             <LogoCard src={Html5svg} />
             <LogoCard src={CSSsvg} />
             <LogoCard src={JSsvg} />
